@@ -1,0 +1,12 @@
+body {
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: aquamarine;
+}
+body h2 {
+    margin-bottom: 0;
+}
+body p {
+    margin-top: .5rem;
+}
