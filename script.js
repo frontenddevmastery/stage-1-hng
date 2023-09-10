@@ -24,7 +24,7 @@ const switchDay = (dayInNum) => {
         case 6:
             return 'Saturday'
             break;
-        case 7:
+        case 0:
             return 'Sunday'
             break
         default:
@@ -36,10 +36,11 @@ const currentDayOfTheWeek = () => {
     app.datatestid.forEach( elem => {
         if (elem.dataset.testid === 'currentDayOfTheWeek') {
             let currentDay = switchDay(app.time.getDay())
+            console.log(app.time.getDay());
             elem.innerText = currentDay
         }
         if (elem.dataset.testid === 'currentUTCTime') {
-            let currentUTC = app.time.toISOString()
+            let currentUTC = Date.now()
             elem.innerText = currentUTC
         }
     })
